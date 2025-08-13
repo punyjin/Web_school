@@ -1,0 +1,216 @@
+/* Responsive Styles for VBAC Website with Tailwind CSS Integration */
+
+/* Large screens (up to 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem; /* Tailwind: text-4xl */
+    }
+    .hero-content .subtitle {
+        font-size: 1.125rem; /* Tailwind: text-lg */
+    }
+    .about-grid,
+    .news-grid,
+    .contact-grid {
+        gap: 1.25rem; /* Tailwind: gap-5 */
+    }
+}
+
+/* Medium screens (up to 992px) */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header-cta .search-box {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 2rem; /* Tailwind: text-3xl */
+    }
+    .hero-content .subtitle {
+        font-size: 1rem; /* Tailwind: text-base */
+    }
+    .section-title {
+        font-size: 1.875rem; /* Tailwind: text-3xl */
+    }
+    .about-card {
+        padding: 1.25rem; /* Tailwind: p-5 */
+    }
+    .news-card img {
+        height: 180px;
+    }
+    .contact-form {
+        padding: 1.5rem; /* Tailwind: p-6 */
+    }
+}
+
+/* Small screens (up to 768px) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+        padding: 0 0.75rem; /* Tailwind: px-3 */
+    }
+    .sticky-header {
+        padding: 0.5rem 0; /* Tailwind: py-2 */
+    }
+    .logo {
+        font-size: 1.25rem; /* Tailwind: text-xl */
+    }
+    .logo span {
+        font-size: 0.875rem; /* Tailwind: text-sm */
+    }
+    .main-nav {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 60px);
+        background: var(--light-color);
+        box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    .dark-mode .main-nav {
+        background: #2d3748;
+    }
+    .main-nav.active {
+        left: 0;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        padding: 1.25rem; /* Tailwind: p-5 */
+    }
+    .main-nav ul li a {
+        padding: 0.75rem 0; /* Tailwind: py-3 */
+        border-bottom: 1px solid #eee;
+        font-size: 1rem; /* Tailwind: text-base */
+    }
+    .dark-mode .main-nav ul li a {
+        border-bottom: 1px solid #4a5568;
+    }
+    .header-cta {
+        align-items: center;
+        gap: 0.5rem; /* Tailwind: gap-2 */
+    }
+    .header-cta .btn-primary {
+        padding: 0.5rem 1rem; /* Tailwind: px-4 py-2 */
+        font-size: 0.875rem; /* Tailwind: text-sm */
+    }
+    .mobile-menu-btn {
+        display: flex;
+    }
+    .hero {
+        height: 80vh;
+    }
+    .hero-content h1 {
+        font-size: 1.875rem; /* Tailwind: text-3xl */
+    }
+    .hero-content .subtitle {
+        font-size: 0.875rem; /* Tailwind: text-sm */
+    }
+    .section-title {
+        font-size: 1.5rem; /* Tailwind: text-2xl */
+    }
+    section {
+        padding: 2.5rem 0; /* Tailwind: py-10 */
+    }
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .info-card {
+        padding: 1.25rem; /* Tailwind: p-5 */
+    }
+    .contact-form {
+        padding: 1.25rem; /* Tailwind: p-5 */
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem; /* Tailwind: gap-5 */
+    }
+}
+
+/* Extra small screens (up to 576px) */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 0.5rem; /* Tailwind: px-2 */
+    }
+    .sticky-header {
+        padding: 0.25rem 0; /* Tailwind: py-1 */
+    }
+    .logo {
+        font-size: 1rem; /* Tailwind: text-base */
+    }
+    .logo span {
+        font-size: 0.75rem; /* Tailwind: text-xs */
+    }
+    .main-nav {
+        width: 90%;
+    }
+    .main-nav ul li a {
+        font-size: 0.875rem; /* Tailwind: text-sm */
+    }
+    .header-cta .btn-primary {
+        padding: 0.375rem 0.75rem; /* Tailwind: px-3 py-1.5 */
+        font-size: 0.75rem; /* Tailwind: text-xs */
+    }
+    .mobile-menu-btn {
+        width: 20px;
+        height: 16px;
+    }
+    .hero {
+        height: 60vh;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem; /* Tailwind: text-2xl */
+    }
+    .hero-content .subtitle {
+        font-size: 0.75rem; /* Tailwind: text-xs */
+    }
+    .btn-secondary {
+        padding: 0.5rem 1rem; /* Tailwind: px-4 py-2 */
+        font-size: 0.875rem; /* Tailwind: text-sm */
+    }
+    .section-title {
+        font-size: 1.25rem; /* Tailwind: text-xl */
+    }
+    .section-title::after {
+        width: 40px;
+    }
+    .about-card .counter {
+        font-size: 2rem; /* Tailwind: text-3xl */
+    }
+    .news-card img {
+        height: 120px;
+    }
+    .faq-item h3 {
+        font-size: 0.875rem; /* Tailwind: text-sm */
+        padding: 0.75rem; /* Tailwind: p-3 */
+    }
+    .faq-item .faq-content {
+        padding: 0.75rem; /* Tailwind: p-3 */
+    }
+    .contact-form {
+        padding: 0.75rem; /* Tailwind: p-3 */
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem; /* Tailwind: p-2 */
+    }
+    .footer-about h3,
+    .footer-links h3,
+    .footer-newsletter h3 {
+        font-size: 1rem; /* Tailwind: text-base */
+    }
+    .footer-bottom {
+        font-size: 0.75rem; /* Tailwind: text-xs */
+    }
+}

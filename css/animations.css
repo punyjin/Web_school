@@ -1,0 +1,110 @@
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+/* Dark Mode Overrides */
+.dark-mode {
+    --text-color: #e2e8f0;
+    --light-color: #2d3748;
+    --dark-color: #1a202c;
+}
+.dark-mode body {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+}
+.dark-mode .sticky-header {
+    background: rgba(45, 55, 72, 0.98);
+}
+.dark-mode .logo {
+    color: var(--text-color);
+}
+.dark-mode .container {
+    background: var(--light-color);
+}
+.dark-mode section {
+    background: var(--light-color);
+}
+.dark-mode footer {
+    background: var(--light-color);
+    color: var(--text-color);
+}
+.dark-mode .program-card,
+.dark-mode .news-card,
+.dark-mode .contact-form,
+.dark-mode .info-card,
+.dark-mode .faq-item .faq-content {
+    background: #2d3748;
+}
+.dark-mode .faq-item h3 {
+    background: #4a5568;
+}
+/* Toggle Button Styles */
+#toggle-dark {
+    transition: background-color 0.3s ease;
+}
+.dark-mode #toggle-dark {
+    background-color: #4a5568; /* สีเข้มสำหรับ dark mode */
+}
+/* FAQ Collapsible */
+.faq-item .faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    
+}
+.faq-item.active .faq-content {
+    max-height: 1vh;
+}
+.faq-content:not(.hidden) {
+    max-height: 500px; /* Adjust based on content size */
+}
+.faq-item h3:hover {
+    transform: translateX(5px);
+}
+/* Styling for the news ticker container */
+.news-ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    color: #e2e8f0;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Styling for the ticker content */
+.ticker-content {
+    display: inline-block;
+    animation: ticker-scroll 20s linear infinite;
+}
+
+/* Styling for individual ticker items */
+.ticker-item {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 1.1rem;
+    color: var(--light-color);
+}
+
+/* Animation keyframes for right-to-left scrolling */
+@keyframes ticker-scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Pause animation on hover for better UX */
+/* .ticker-content:hover {
+    animation-play-state: paused;
+} */

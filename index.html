@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/main.js" defer></script>
+    <script src="/js/formcontact.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.22.2/sweetalert2.min.js"></script>
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WNCLJ5W42P');
+    </script>
+    <style>
+        
+    </style>
+</head>
+<body class="transition-colors duration-300">
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="container flex justify-between items-center">
+            <a href="#home" class="logo">VBAC <span>รามอินทรา วิทยาลัยดีๆ ที่ลงตัว ?</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">หน้าหลัก</a></li>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#news">ข่าวสาร</a></li>
+                    <li><a href="#faq">คำถามที่พบบ่อย</a></li>
+                    <li><a href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <div class="search-box">
+                    <input type="text" placeholder="ค้นหา..." class="rounded-l-md">
+                    <button onclick="search_function()"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="toggle-dark" class="btn btn-primary flex items-center gap-2">
+                    <i class="fas fa-sun"></i>
+                    <span>โหมดกลางวัน</span>
+                </button>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.mobile-menu-btn').click(function() {
+                $('.main-nav').toggleClass('active');
+            });
+        });
+    </script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-students-walking-in-a-university-4516-large.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="overlay"></div>
+        <div class="hero-content fade-in">
+            <h1>ยินดีต้อนรับสู่ VBAC รามอินทรา</h1>
+            <p class="subtitle">วิทยาลัยแห่งการเรียนรู้ คู่คุณธรรม สร้างนวัตกรรมเพื่อสังคม</p>
+            <a href="#about" class="btn btn-secondary">เรียนรู้เพิ่มเติม</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">เกี่ยวกับวิทยาลัย VBAC</h2>
+            <p class="text-center max-w-2xl mx-auto fade-in">วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา (VBAC) สังกัดศูนย์ส่งเสริมการอาชีวศึกษาเอกชน (ศอช.) ได้รับอนุญาตให้เปิดดำเนินการสอนตามใบอนุญาตที่ กอ.87/2542 ลงวันที่ 11 พฤษภาคม 2542 เริ่มเปิดสอนตั้งแต่ปีการศึกษา 2542 ตั้งอยู่ที่ 5 ซอยรามอินทรา 39 แยก 5 ถนนรามอินทรา แขวงอนุสาวรีย์ เขตบางเขน กรุงเทพมหานคร 10220 บนพื้นที่ 4 ไร่ 2 งาน ด้วยอาคารเรียน 6 ชั้นและอาคารประกอบ มีห้องเรียน 41 ห้อง ห้องปฏิบัติการ 8 ห้อง มุ่งพัฒนานักศึกษาให้มีความรู้ ความสามารถ และคุณธรรมเพื่อสร้างอนาคตที่ยั่งยืน</p>
+            <div class="about-grid">
+                <div class="about-card fade-in">
+                    
+                    <h3>นักศึกษากว่า</h3>
+                    <div class="counter">1000+</div>
+                    <p>ที่กำลังศึกษาในหลักสูตรต่างๆ</p>
+                </div>
+                <div class="about-card fade-in">
+                    <h3>มีสาขาวิชา</h3>
+                    <div class="counter">8 สาขา</div>
+                    <p>ในระดับ ปวช. และ ปวส.</p>
+                </div>
+                <div class="about-card fade-in">
+                    <h3>มีคณะอาจารย์กว่า</h3>
+                    <div class="counter">100 ท่าน</div>
+                    <p>ผู้เชี่ยวชาญในสาขาต่างๆ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" style="background: var(--light-color);">
+        <div class="container">
+            <h2 class="section-title fade-in">ข่าวสารล่าสุด</h2>
+            <div class="news-ticker">
+                <div class="ticker-content">
+                    <div class="ticker-item"><span>ใหม่!</span> มหกรรมวิชาชีพ VBAC Exhibition 2568</div>
+                    <div class="ticker-item"><span>งาน!</span> การประกวดวงดนตรี High School Music Challenge ครั้งที่ 5</div>
+                </div>
+            </div>
+            <div class="news-grid" id="news-container"></div> 
+            <!-- ส่วนนี้ดึงข้อมูลจาก JSON -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title fade-in text-3xl font-bold text-center mb-8">คำถามที่พบบ่อย</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="faq-item mb-4">
+                    <h3 class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-lg transition-all duration-300 hover:bg-gray-300">สมัครเรียนต้องทำอย่างไร?</h3>
+                    <div class="faq-content p-4 bg-white rounded-b-lg hidden transition-all duration-300">
+                        <p>สามารถสมัครผ่านระบบออนไลน์ที่หน้าเว็บไซต์ <a href="http://www.vbac.ac.th" class="text-blue-600 hover:underline">www.vbac.ac.th</a> หรือติดต่อที่สำนักงานทะเบียน โทร 02-521-8223</p>
+                    </div>
+                </div>
+                <div class="faq-item mb-4">
+                    <h3 class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-lg transition-all duration-300 hover:bg-gray-300">มีหลักสูตรอะไรบ้าง?</h3>
+                    <div class="faq-content p-4 bg-white rounded-b-lg hidden transition-all duration-300">
+                        <p>VBAC เปิดสอน ปวช. 6 สาขา (คอมพิวเตอร์ธุรกิจ, การบัญชี, การตลาด, เทคโนโลยีสารสนเทศ, การท่องเที่ยว, คอมพิวเตอร์กราฟิก) และ ปวส. 8 สาขา รวมภาคเช้า บ่าย และภาคพิเศษ</p>
+                    </div>
+                </div>
+                <div class="faq-item mb-4">
+                    <h3 class="text-lg font-semibold cursor-pointer p-4 bg-gray-200 rounded-lg transition-all duration-300 hover:bg-gray-300">ค่าเทอมเท่าไหร่?</h3>
+                    <div class="faq-content p-4 bg-white rounded-b-lg hidden transition-all duration-300">
+                        <p>ค่าเทอม ปวช. 1-2 รวมค่าเบ็ดเตล็ดประมาณ 10,000 ต้นๆ ต่อเทอม ส่วน ปวช. 3 มากกว่าเล็กน้อยเนื่องจากมีกิจกรรมปัจฉิมนิเทศ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    document.querySelectorAll('.faq-item h3').forEach(item => {
+        item.addEventListener('click', () => {
+            const content = item.nextElementSibling;
+            const isOpen = !content.classList.contains('hidden');
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-content').forEach(content => {
+                content.classList.add('hidden');
+                content.style.maxHeight = null;
+            });
+            
+            // Toggle the clicked FAQ item
+            if (!isOpen) {
+                content.classList.remove('hidden');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+    </script>
+    <!-- Contact Section -->
+    <section id="contact" style="background: var(--light-color);">
+        <div class="container">
+            <h2 class="section-title fade-in">ติดต่อเรา</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card fade-in">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>ที่อยู่</h3>
+                            <p>5 ซอยรามอินทรา 39 แยก 5 ถนนรามอินทรา แขวงอนุสาวรีย์ เขตบางเขน กรุงเทพมหานคร 10220</p>
+                        </div>
+                    </div>
+                    <div class="info-card fade-in">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>โทรศัพท์</h3>
+                            <p>02-521-8223</p>
+                        </div>
+                    </div>
+                    <div class="info-card fade-in">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>อีเมล</h3>
+                            <p>contact@vbac.ac.th</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/mrblordr" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="ชื่อ" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="อีเมล" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="ข้อความ" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poll Section -->
+<section id="poll" class="py-12 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="section-title fade-in text-3xl font-bold mb-8">แบบสำรวจความคิดเห็น</h2>
+        <form action="https://formspree.io/f/xrblorvr" method="POST" class="poll-form max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md">
+            <div class="form-group mb-6">
+                <label class="block text-lg font-semibold mb-2">คุณพึงพอใจกับการเยี่ยมชมเว็บไซต์ VBAC มากน้อยเพียงใด?</label>
+                <div class="flex justify-center space-x-4">
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="มาก" required class="form-radio text-blue-600">
+                        <span class="ml-2">มาก</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="ปานกลาง" class="form-radio text-blue-600">
+                        <span class="ml-2">ปานกลาง</span>
+                    </label>
+                    <label class="inline-flex items-center">
+                        <input type="radio" name="satisfaction" value="น้อย" class="form-radio text-blue-600">
+                        <span class="ml-2">น้อย</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form-group mb-6">
+                <label for="feedback" class="block text-lg font-semibold mb-2">ข้อเสนอแนะเพิ่มเติม (ถ้ามี)</label>
+                <textarea id="feedback" name="feedback" placeholder="กรุณาแบ่งปันความคิดเห็นของคุณ" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 resize-y"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-full p-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">ส่งแบบสำรวจ</button>
+        </form>
+    </div>
+    <br> 
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>เกี่ยวกับ VBAC</h3>
+                <p>วิทยาลัยแห่งการเรียนรู้ คู่คุณธรรม สร้างนวัตกรรมเพื่อสังคม มุ่งสู่ประชาคมอาเซียน</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/vbac.ramindra"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>ลิงก์ด่วน</h3>
+                <ul>
+                    <li><a href="#home">หน้าหลัก</a></li>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#news">ข่าวสาร</a></li>
+                    <li><a href="#contact">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>จดหมายข่าว</h3>
+                <form>
+                    <input type="email" placeholder="อีเมลของคุณ">
+                    <button type="submit" class="btn">สมัคร</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 วิทยาลัยเทคโนโลยีวิบูลย์บริหารธุรกิจ รามอินทรา. สงวนลิขสิทธิ์.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
