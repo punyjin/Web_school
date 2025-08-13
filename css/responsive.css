@@ -136,7 +136,7 @@
         gap: 1.25rem; /* Tailwind: gap-5 */
     }
 }
-
+    
 /* Extra small screens (up to 576px) */
 @media (max-width: 576px) {
     .container {
